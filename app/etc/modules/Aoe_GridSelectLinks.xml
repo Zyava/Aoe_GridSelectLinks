@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Dmytro Zavalkin <dimzav@gmail.com>
+ */
+-->
+<config>
+    <modules>
+        <Aoe_GridSelectLinks>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Aoe_GridSelectLinks>
+    </modules>
+</config>

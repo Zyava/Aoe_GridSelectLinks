@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Dmytro Zavalkin <dimzav@gmail.com>
+ */
+-->
+<config>
+    <modules>
+        <Aoe_GridSelectLinks>
+            <version>1.0.0.0</version>
+        </Aoe_GridSelectLinks>
+    </modules>
+    <global>
+        <helpers>
+            <aoe_gridSelectLinks>
+                <class>Aoe_GridSelectLinks_Helper</class>
+            </aoe_gridSelectLinks>
+        </helpers>
+        <blocks>
+            <index>
+                <rewrite>
+                    <adminhtml_process_grid_massaction>Aoe_GridSelectLinks_Block_Adminhtml_Process_Grid_Massaction</adminhtml_process_grid_massaction>
+                </rewrite>
+            </index>
+            <adminhtml>
+                <rewrite>
+                    <widget_grid_massaction>Aoe_GridSelectLinks_Block_Adminhtml_Widget_Grid_Massaction</widget_grid_massaction>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <aoe_gridSelectLinks>
+                    <file>aoe_gridSelectLinks.xml</file>
+                </aoe_gridSelectLinks>
+            </updates>
+        </layout>
+        <aoe_gridSelectLinks>
+            <add_select_links>
+                <handles>
+                    <adminhtml_process_list>adminhtml_process_list</adminhtml_process_list>
+                    <adminhtml_cache_index>adminhtml_cache_index</adminhtml_cache_index>
+                </handles>
+            </add_select_links>
+        </aoe_gridSelectLinks>
+    </adminhtml>
+</config>

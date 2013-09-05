@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Dmytro Zavalkin <dimzav@gmail.com>
+ */
+-->
+<layout>
+    <adminhtml_process_list>
+        <reference name="head">
+            <action method="addJs"><file>aoe_gridSelectLinks/adminhtml/grid.js</file></action>
+        </reference>
+    </adminhtml_process_list>
+    <adminhtml_cache_index>
+        <reference name="head">
+            <action method="addJs"><file>aoe_gridSelectLinks/adminhtml/grid.js</file></action>
+        </reference>
+    </adminhtml_cache_index>
+</layout>

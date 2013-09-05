@@ -1,0 +1,8 @@
+# module
+app/etc/modules/Aoe_GridSelectLinks.xml                                app/etc/modules/Aoe_GridSelectLinks.xml
+app/code/community/Aoe/GridSelectLinks/                                app/code/community/Aoe/GridSelectLinks/
+
+# backend design
+app/design/adminhtml/default/default/layout/aoe_gridSelectLinks.xml    app/design/adminhtml/default/default/layout/aoe_gridSelectLinks.xml
+app/design/adminhtml/default/default/template/aoe_gridSelectLinks/     app/design/adminhtml/default/default/template/aoe_gridSelectLinks/
+js/aoe_gridSelectLinks/adminhtml/                                      js/aoe_gridSelectLinks/adminhtml/
