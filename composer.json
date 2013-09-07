@@ -1,0 +1,16 @@
+{
+    "name":"aoe/grid-select-links",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/Zyava/Aoe_GridSelectLinks",
+    "description":"This module removes 'Select Visible' and 'Unselect Visible' links and adds 'Not Green' and 'Unselect Not Green' links to the mass action grid block. Currently used for grids on the Index Management and Cache Storage Management pages.",
+    "authors":[
+        {
+            "name":"Dmytro Zavalkin",
+            "email":"dmytro.zavalkin@gmail.com"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
