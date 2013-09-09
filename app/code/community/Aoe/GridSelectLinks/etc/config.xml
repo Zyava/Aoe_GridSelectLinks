@@ -20,6 +20,7 @@
             <index>
                 <rewrite>
                     <adminhtml_process_grid_massaction>Aoe_GridSelectLinks_Block_Adminhtml_Process_Grid_Massaction</adminhtml_process_grid_massaction>
+                    <adminhtml_notifications>Aoe_GridSelectLinks_Block_Adminhtml_Index_Notifications</adminhtml_notifications>
                 </rewrite>
             </index>
             <adminhtml>

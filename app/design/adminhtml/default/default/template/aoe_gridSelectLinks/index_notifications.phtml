@@ -1,0 +1,15 @@
+<?php
+/** @var Aoe_GridSelectLinks_Block_Adminhtml_Index_Notifications $this */
+$_processes = $this->getProcessesForReindex()
+?>
+<?php if ($_processes): ?>
+    <div class="notification-global">
+        <strong><?php echo $this->helper('index')->__('One or more of the Indexes are not up to date:') ?></strong>
+        <?php echo implode(', ', $_processes) ?>.
+        <?php echo $this->helper('index')->__(
+            'Click here to go to <a href="%s">Index Management</a> or <a href="%s">rebuild all required indexes</a>.',
+            $this->getManageUrl(),
+            $this->getRebuildUrl()
+        ); ?>
+    </div>
+<?php endif; ?>
