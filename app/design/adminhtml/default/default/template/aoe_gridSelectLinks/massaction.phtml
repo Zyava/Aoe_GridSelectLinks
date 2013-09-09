@@ -60,3 +60,8 @@
 </script>
 <?php endif; ?>
 </div>
+<script type="text/javascript">
+    Event.observe(window, "load", function(){
+        <?php echo $this->getJsObjectName() ?>.selectNotGreen();
+    });
+</script>
