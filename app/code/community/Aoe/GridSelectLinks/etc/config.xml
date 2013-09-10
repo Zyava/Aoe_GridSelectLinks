@@ -26,6 +26,7 @@
             <adminhtml>
                 <rewrite>
                     <widget_grid_massaction>Aoe_GridSelectLinks_Block_Adminhtml_Widget_Grid_Massaction</widget_grid_massaction>
+                    <cache_notifications>Aoe_GridSelectLinks_Block_Adminhtml_Cache_Notifications</cache_notifications>
                 </rewrite>
             </adminhtml>
         </blocks>

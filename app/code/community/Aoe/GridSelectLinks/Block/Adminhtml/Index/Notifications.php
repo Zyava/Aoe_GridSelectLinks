@@ -5,6 +5,11 @@
 
 class Aoe_GridSelectLinks_Block_Adminhtml_Index_Notifications extends Mage_Index_Block_Adminhtml_Notifications
 {
+    /**
+     * List of indexes which require rebuild
+     *
+     * @var array
+     */
     private $_indexers;
 
     private function _collectIndexersWhichRequireReindex()

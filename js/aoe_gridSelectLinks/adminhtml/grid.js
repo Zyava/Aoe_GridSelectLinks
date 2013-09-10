@@ -5,7 +5,9 @@
 varienGridMassaction.prototype.getNotGreenCheckboxesValues = function () {
     var result = [];
     this.getCheckboxes().each(function (checkbox) {
-        if ($(checkbox).up(1).select('span.grid-severity-critical').length > 0) {
+        if ($(checkbox).up(1).select('span.grid-severity-critical').length > 0
+            || $(checkbox).up(1).select('span.grid-severity-minor').length > 0
+        ) {
             result.push(checkbox.value);
         }
     }.bind(this));

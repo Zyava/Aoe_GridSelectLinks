@@ -1,0 +1,15 @@
+<?php
+/** @var Aoe_GridSelectLinks_Block_Adminhtml_Cache_Notifications $this */
+$_processes = $this->getCacheTypesForRefresh()
+?>
+<?php if ($_processes): ?>
+    <div class="notification-global">
+        <strong><?php echo $this->helper('adminhtml')->__('One or more of the Cache Types are invalidated:') ?></strong>
+        <?php echo implode(', ', $_processes) ?>.
+        <?php echo $this->helper('index')->__(
+            'Click here to go to <a href="%s">Cache Management</a> or <a href="%s">refresh all invalidated cache types</a>.',
+            $this->getManageUrl(),
+            $this->getRefreshUrl()
+        ); ?>
+    </div>
+<?php endif; ?>
